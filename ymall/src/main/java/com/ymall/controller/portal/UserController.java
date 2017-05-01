@@ -96,9 +96,10 @@ public class UserController {
         }
 
         user.setId(currentUser.getId());
-        user.setUsername(currentUser.getUsername());
+//        user.setUsername(currentUser.getUsername());
         ServerResponse<User> response = userService.updateInfo(user);
         if (response.isSuccess()) {
+            response.getData().setUsername(currentUser.getUsername());
             session.setAttribute(Const.CURRENT_USER, response.getData());
         }
         return response;
