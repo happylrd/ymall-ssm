@@ -141,8 +141,14 @@
             <version>2.9.4</version>
         </dependency>
 
-        <!-- file upload -->
+        <!-- ftp client -->
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.5</version>
+        </dependency>
 
+        <!-- file upload -->
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
@@ -150,7 +156,6 @@
         </dependency>
 
         <!-- mybatis page helper -->
-
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
