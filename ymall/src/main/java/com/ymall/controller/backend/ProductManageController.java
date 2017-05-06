@@ -75,7 +75,7 @@ public class ProductManageController {
         }
 
         if (userService.checkAdminRole(user).isSuccess()) {
-            return productService.getProductDetail(productId);
+            return productService.manageProductDetail(productId);
         } else {
             return ServerResponse.createByErrorMessage("无权限操作");
         }
